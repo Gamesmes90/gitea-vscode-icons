@@ -17,12 +17,15 @@ These are all the available npm run commands:
 ```
     "dev": "webpack -w --mode development; npm run manifest:FIREFOX",
     "build:all": "npm run build:firefox; npm run build:chrome",
-    "build:firefox": "webpack --mode production; npm run manifest:FIREFOX; BROWSER=FIREFOX ts-node scripts/make-dist-zip.script.ts",
-    "build:chrome": "webpack --mode production; npm run manifest:CHROME; BROWSER=CHROME ts-node scripts/make-dist-zip.script.ts",
+    "build:all:clean": "npm run build:firefox; npm run build:chrome; npm run clean",
+    "build:firefox": "webpack --mode production; npm run manifest:FIREFOX; BROWSER=FIREFOX ts-node scripts/make-dist-zip.script.ts; npm run clean",
+    "build:chrome": "webpack --mode production; npm run manifest:CHROME; BROWSER=CHROME ts-node scripts/make-dist-zip.script.ts; npm run clean",
     "manifest:FIREFOX": "BROWSER=FIREFOX ts-node scripts/manifest-gen.ts",
-    "manifest:CHROME": "BROWSER=CHROME ts-node scripts/manifest-gen.ts"
+    "manifest:CHROME": "BROWSER=CHROME ts-node scripts/manifest-gen.ts",
+    "clean": "rimraf ./dist",
+    "clean:all": "rimraf ./build/*.zip; rimraf ./dist"
 ```
-
+Note: To use "manifest:FIREFOX" and "manifest:CHROME" correctly, there must be a dist directory. 
 ## Optional: specify urls
 You can specify urls in the "content_scripts" property of the manifest file.
 
