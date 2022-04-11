@@ -9,6 +9,11 @@ const manifest = {
     '48': 'favicon48.png',
     '16': 'favicon16.png'
   },
+  browser_specific_settings: {
+    gecko: {
+        id: 'gamesmes90@gmail.com'
+    }
+  },
   content_scripts:[
     {
      matches:['<all_urls>'],
