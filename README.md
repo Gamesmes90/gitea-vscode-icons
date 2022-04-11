@@ -45,3 +45,4 @@ convert -resize 128x128 favicon.png favicon128.png
 convert -resize 48x48 favicon.png favicon48.png
 convert -resize 16x16 favicon.png favicon16.png
 ```
+Note: The scripts to generate manifests and zip the extension are slightly modified versions of the scripts from [github-vscode-icons](https://github.com/dderevjanik/github-vscode-icons) 
