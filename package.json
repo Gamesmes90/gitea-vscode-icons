@@ -1,6 +1,6 @@
 {
   "name": "gitea-vscode-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vscode-icons for Gitea",
   "main": "main.js",
   "scripts": {
