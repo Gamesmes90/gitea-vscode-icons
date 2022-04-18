@@ -15,7 +15,7 @@ The build folder will contain the packaged extensions.
 
 These are all the available npm run commands:
 ```
-    "dev": "webpack -w --mode development; npm run manifest:FIREFOX",
+    "dev": "mkdir dist; npm run manifest:FIREFOX; webpack -w --mode development",
     "build:all": "npm run build:firefox; npm run build:chrome",
     "build:all:clean": "npm run build:firefox; npm run build:chrome; npm run clean",
     "build:firefox": "webpack --mode production; npm run manifest:FIREFOX; BROWSER=FIREFOX ts-node scripts/make-dist-zip.script.ts; npm run clean",
