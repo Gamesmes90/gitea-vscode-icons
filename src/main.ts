@@ -21,7 +21,7 @@ for (let i = 0; i < elements.length; i++){
 
     const span =  elements[i].firstElementChild.firstElementChild;//<span class="truncate">
  
-    if (span.firstElementChild.getAttribute("class") == "svg octicon-file-directory")//<svg ... class="svg octicon-file-directory">
+    if (span.firstElementChild.getAttribute("class").includes("svg octicon-file-directory"))//<svg ... class="svg octicon-file-directory">
         newIconEl.setAttribute('src', chrome.runtime.getURL('./icons/'+ getIconForFolder(name)));
     else
         newIconEl.setAttribute('src', chrome.runtime.getURL('./icons/'+ getIconForFile(name)));
