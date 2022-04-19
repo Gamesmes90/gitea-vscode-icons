@@ -16,7 +16,7 @@
     "clean:all": "rimraf ./build/*.zip; rimraf ./dist"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPLv3",
   "dependencies": {
     "vscode-icons-js": "^11.6.1"
   },
