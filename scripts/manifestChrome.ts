@@ -1,6 +1,6 @@
 const manifest = {
   manifest_version:3,
-  version:'1.0.1',
+  version:'1.1.0',
   description: 'This extension shows VS Code icons in Gitea Repositories',
   name:'gitea-vscode-icons',
   author: 'Gamesmes90 <gamesmes90@gmail.com>',
