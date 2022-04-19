@@ -1,5 +1,7 @@
 # Gitea VS-Code Icons <img src="favicon.png" alt="Gitea VS-Code Icons" width="25" />
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 Browser extension to use [vscode-icons](https://github.com/dderevjanik/github-vscode-icons) in gitea repositories using [vscode-icons-js](https://github.com/dderevjanik/vscode-icons-js)
 
 ## Screenshot
