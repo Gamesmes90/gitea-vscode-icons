@@ -47,4 +47,14 @@ convert -resize 128x128 favicon.png favicon128.png
 convert -resize 48x48 favicon.png favicon48.png
 convert -resize 16x16 favicon.png favicon16.png
 ```
+
+### Important note about vscode-icons-js
+The original npm package lacks a couple of extensions, for this reason the node module is pre-installed and will be updated accordingly.
+
+It will probably need the node modules:
+```bash
+cd node_modules/vscode-icons-js
+npm install
+```
+
 Note: The scripts to generate manifests and zip the extension are slightly modified versions of the scripts from [github-vscode-icons](https://github.com/dderevjanik/github-vscode-icons) 
