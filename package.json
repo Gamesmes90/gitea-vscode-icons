@@ -29,6 +29,6 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "vscode-icons-js": "file:../../../Desktop/vscode-icons-js"
+    "vscode-icons-js": "^11.6.1"
   }
 }
